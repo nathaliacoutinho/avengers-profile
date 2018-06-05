@@ -1,0 +1,9 @@
+<div class="index-wrapper">
+  <div class="id-card">
+    <% @avengers.each do |avenger| %>
+      <h1><%= link_to avenger.name, avenger_path(avenger) %></h1>
+    <% end %>
+    <p><%= link_to "New Avenger", new_avenger_path(@avenger) %>
+    </p>
+  </div>
+</div>

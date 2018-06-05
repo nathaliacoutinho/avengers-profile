@@ -1,0 +1,49 @@
+<!-- <div class="index-wrapper"> -->
+<div class="form-inline">
+<%= form_for(@avenger) do |f| %>
+  <div class="form-group">
+    <%= f.label :name %>
+  </div>
+
+  <div class="form-group">
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :strength %>
+  </div>
+
+  <div class="form-group">
+    <%= f.text_field :strength %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :weakness %>
+  </div>
+
+  <div class="form-group">
+    <%= f.text_field :weakness %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :known_as %>
+  </div>
+
+  <div class="form-group">
+    <%= f.text_field :known_as %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :image %>
+  </div>
+
+  <div class="form-group">
+    <%= f.url_field :image %>
+  </div>
+
+  <%= f.submit :class => "btn btn-warning" %>
+<% end %>
+
+
+</div>
+<!-- </div> -->

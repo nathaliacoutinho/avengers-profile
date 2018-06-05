@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  strength: MyText
+  weakness: MyText
+  known_as: MyString
+
+two:
+  name: MyString
+  strength: MyText
+  weakness: MyText
+  known_as: MyString

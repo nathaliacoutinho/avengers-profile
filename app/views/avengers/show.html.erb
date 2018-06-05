@@ -1,0 +1,26 @@
+
+  <div class="id-card-wrapper">
+    <div class="id-card">
+      <div class="profile-row">
+        <div class="dp">
+          <div class="dp-arc-outer"></div>
+          <div class="dp-arc-inner"></div>
+          <!-- <img src="images/strange.jpg"> -->
+          <%= image_tag(@avenger.image) %>
+        </div>
+        <div class="desc">
+          <h1><%= @avenger.name %></h1>
+          <p>Strength: <%= @avenger.strength %></p>
+          <p>Weakness: <%= @avenger.weakness %> </p>
+          <p>Known as: <%= @avenger.known_as %></p>
+          <!-- <a href="#" class="clickme">Soundtrack</a> -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <p><%= link_to "Back to Avengers", avengers_path(@avenger)%></p>
+  <p><%= link_to "Edit", edit_avenger_path(@avenger)%></p>
+    <%= link_to "Delete", avenger_path(@avenger),
+    method: :delete,
+    data: { confirm: "Are you sure?" }, :class => "btn btn-danger" %>
